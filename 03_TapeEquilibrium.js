@@ -47,7 +47,7 @@ function solution(A) {
   let minDiff = Infinity;
   let leftSum = 0;
 
-  for (let i of A) {
+  for (let i = 0; i < A.length - 1; i++) {
     leftSum += i;
     let rightSum = totalSum - leftSum;
     let diff = Math.abs(leftSum - rightSum);
